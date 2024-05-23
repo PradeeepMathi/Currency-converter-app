@@ -1,9 +1,8 @@
-export default function Result(){
-    return(
-        <>
-        <div className='result'>
-            <p> 1 INR is equal to 83.25 USD</p>
-        </div>
-        </>
-    )
-}
+export default function Result({ amount, toCurrency, fromCurrency, convertedAmount }) {
+    return (
+      <div className="result">
+        <p>{amount} {fromCurrency} is equal to {convertedAmount} {toCurrency}</p>
+      </div>
+    );
+  }
+  
